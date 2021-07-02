@@ -56,7 +56,8 @@ for (element of sortedScores) {
         if (element === value) {
             if (names.includes(key)) {
                 sortedNames.push(key)
-                names.splice(names.indexOf(value), 0)
+                names.splice(names.indexOf(key), 1)
+                console.log(sortedNames);
             }
         }
     })
